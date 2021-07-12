@@ -1,12 +1,63 @@
+for(i=1; i<=18; i++) {
+    // Create a div, with class "bar", and set the width to 100px.
+    var newElement = document.createElement("div");
+    newElement.className = "bar";
+    newElement.style.width = i*50 + "px";
+
+    // Place a text label inside the new div.
+    var newText = document.createTextNode("d" + i);
+    newElement.appendChild(newText);
+
+    // Put the new div on the page inside the existing element "d1".
+    var destination = document.getElementById("kts");
+    destination.appendChild(newElement);   
+}
+
+console.log(newText)
+
+
+
+
+
+
+
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
-function kata1() {
-    // implemente o código do kata 1 aqui
+function showResults (valor) {
+    const resposta = document.getElementById('d1');    
+    var newElement = document.createElement("p");       
+    newElement.innerHTML = valor;
+    resposta.appendChild(newElement);
+
+
 }
 
-function kata2() {
-    // implemente o código do kata 2 aqui
+function kata1(n) {
+    // implemente o código do kata 1 aqui
+    let k1 = []
+    for(let i = 1; i <= n; i++) {
+        k1.push(i);
+    }
+    return showResults(k1)
 }
+console.log(kata1(25))
+
+
+function kata2(n) {
+    // implemente o código do kata 2 aqui
+    let k2 = []
+    for(let i = 25; i > 0; i--) {
+        k2.push(i);
+    }
+    return showResults(k2)
+}
+console.log(kata2(25))
+    
+   
+
+
+
+
 
 function kata3() {
     // implemente o código do kata 3 aqui

@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function showResults (valor) {
@@ -14,6 +7,7 @@ function showResults (valor) {
     let newElement = document.createElement("p");       
     newElement.innerHTML = valor;
     resposta.appendChild(newElement);
+    
 
 
 }
@@ -25,7 +19,8 @@ function kata1(n1) {
     for(let i = 1; i <= n1; i++) {
         k1.push(" " + i);
     }
-    return showResults( "kata 1: " + k1)
+    showResults( "kata 1: " + k1)
+    return k1
 }
 kata1(25)
 
@@ -37,9 +32,11 @@ function kata2(n2) {
     for(let i = n2; i > 0; i--) {
         k2.push(" " + i);
     }
-    return showResults("kata 2: " + k2)
+    showResults("kata 2: " + k2)
+    return k2
 }
 kata2(25)   
+
 
 
 
@@ -51,7 +48,8 @@ function kata3(n3) {
     for(let i = -1; i >= n3 ; i--) {
         k3.push(" " + i);
     }
-    return showResults("kata 3: " + k3)
+    showResults("kata 3: " + k3)
+    return k3
 }
 kata3(-25)
     
@@ -64,7 +62,8 @@ function kata4(n4) {
     for(let i = n4; i <= -1; i++) {
         k4.push(" " + i);
     }
-    return showResults("kata 4: " + k4)
+    showResults("kata 4: " + k4)
+    return k4
 }
 kata4(-25)
 
@@ -77,7 +76,8 @@ function kata5(n5) {
             k5.push(" " + i)
         }
     }
-    return showResults("kata 5: " + k5)
+    showResults("kata 5: " + k5)
+    return k5
 }
 kata5(-25)
 
@@ -90,7 +90,8 @@ function kata6(n6) {
             k6.push(" " + i)
         }
     }
-    return showResults("kata 6: " + k6)
+    showResults("kata 6: " + k6)
+    return k6
 }
 
 kata6(100)
@@ -104,7 +105,8 @@ function kata7(n7) {
             k7.push(" " + i)
         }
     }
-    return showResults("Kata 7: " + k7)
+    showResults("Kata 7: " + k7)
+    return k7
 }
 kata7(100)
 
@@ -117,7 +119,8 @@ function kata8(n8) {
             k8.push(" " + i)
         }
     }
-    return showResults("Kata 8: " + k8)
+    showResults("Kata 8: " + k8)
+    return k8
 }
 kata8(100)
 
@@ -133,7 +136,8 @@ function kata9(n9) {
             k9.push(" " + i)
         }
     }
-    return showResults("kata 9 : " + k9)
+    showResults("kata 9 : " + k9)
+    return k9
 }
 kata9(100)
 
@@ -150,7 +154,8 @@ function kata10(n10) {
         }
         
     }    
-    return showResults("kata 10:  " + k10)
+    showResults("kata 10:  " + k10)
+    return k10
 }
 kata10(sampleArray)
 
@@ -164,7 +169,8 @@ function kata11(n11) {
             k11.push(" " + n11[i])
         }
     }
-    return showResults("kata 11: " +  k11)
+    showResults("kata 11: " +  k11)
+    return k11
 
 }
 kata11(sampleArray)
@@ -178,7 +184,8 @@ function kata12(n12) {
             k12.push(" " + n12[i])
         }
     }
-    return showResults("kata 12: " +  k12)
+    showResults("kata 12: " +  k12)
+    return k12
 
 }
 kata12(sampleArray)
@@ -194,7 +201,8 @@ function kata13(n13) {
             k13.push(" " + n13[i])
         }
     }
-    return showResults("Kata 13: " + k13)
+    showResults("Kata 13: " + k13)
+    return k13
 }
 kata13(sampleArray)
 
@@ -207,7 +215,8 @@ function kata14(n14) {
     for (let i = 0; i < n14.length; i ++) {
         k14.push(" " + n14[i] * n14[i])
     }
-    return showResults("Kata 14: " + k14)
+    showResults("Kata 14: " + k14)
+    return k14
 }
 kata14(sampleArray)
 
@@ -222,7 +231,8 @@ function kata15(n15) {
         soma += i        
     } 
     k15.push("Soma de 1 a 20: " + soma)   
-    return showResults("kata 15 -  " + k15)
+    showResults("kata 15 -  " + k15)
+    return k15
 }
 kata15(20)
 
@@ -236,9 +246,12 @@ function kata16(n16) {
         somaArr += n16[i]
     }
     k16.push("A soma dos elementos do Array é: " + somaArr)
-    return showResults("Kata 16 - " + k16)
+    showResults("Kata 16 - " + k16)
+    return k16
 }
 kata16(sampleArray)
+
+
 
 function kata17(n17) {
     // implemente o código do kata 17 aqui
@@ -251,9 +264,13 @@ function kata17(n17) {
         }
     }
     k17.push("O menor elemento do Array é: " + menor)
-    return showResults("kata 17 - " + k17)
+    showResults("kata 17 - " + k17)
+    return k17
 }
 kata17(sampleArray)
+
+
+
 
 function kata18(n18) {
     // implemente o código do kata 18 aqui
@@ -265,7 +282,8 @@ function kata18(n18) {
         }
     }
     k18.push("O maior elemento do Array é: " + maior)
-    return showResults("kata 18 - " + k18)
+    showResults("kata 18 - " + k18)
+    return k18
 }
 kata18(sampleArray)
 
@@ -276,22 +294,7 @@ kata18(sampleArray)
 /**
  * Daqui em diante são os bônus, por sua conta e risco
  */
-/*for(i=1; i<=18; i++) {
-    // Create a div, with class "bar", and set the width to 100px.
-    let newElement = document.createElement("div");
-    newElement.className = "bar";
-    newElement.style.width = i*50 + "px";
 
-    // Place a text label inside the new div.
-    let newText = document.createTextNode("d" + i);
-    newElement.appendChild(newText);
-
-    // Put the new div on the page inside the existing element "d1".
-    let destination = document.getElementById("kts");
-    destination.appendChild(newElement);   
-}
-
-console.log(newText)*/
 
 function kataBonus1(e1) {
     // implemente o código do kata bonus 1 aqui

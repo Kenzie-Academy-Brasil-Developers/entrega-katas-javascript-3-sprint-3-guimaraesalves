@@ -7,9 +7,6 @@ function showResults (valor) {
     let newElement = document.createElement("p");       
     newElement.innerHTML = valor;
     resposta.appendChild(newElement);
-    
-
-
 }
 
 function kata1(n1) {
@@ -230,7 +227,7 @@ function kata15(n15) {
     for(let i = 0; i <= n15; i++){
         soma += i        
     } 
-    k15.push("Soma de 1 a 20: " + soma)   
+    k15.push(soma)   
     showResults("kata 15 -  " + k15)
     return k15
 }
@@ -245,7 +242,7 @@ function kata16(n16) {
     for (let i = 0; i < n16.length; i++) {
         somaArr += n16[i]
     }
-    k16.push("A soma dos elementos do Array é: " + somaArr)
+    k16.push(somaArr)
     showResults("Kata 16 - " + k16)
     return k16
 }
@@ -263,7 +260,7 @@ function kata17(n17) {
             menor = n17[i]
         }
     }
-    k17.push("O menor elemento do Array é: " + menor)
+    k17.push(menor)
     showResults("kata 17 - " + k17)
     return k17
 }
@@ -281,7 +278,7 @@ function kata18(n18) {
             maior = n18[i]
         }
     }
-    k18.push("O maior elemento do Array é: " + maior)
+    k18.push(maior)
     showResults("kata 18 - " + k18)
     return k18
 }

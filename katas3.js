@@ -14,7 +14,7 @@ function kata1(n1) {
     //Exibir os números de 1 a 25: (1, 2, 3, …, 24, 25)
     let k1 = []
     for(let i = 1; i <= n1; i++) {
-        k1.push(" " + i);
+        k1.push(i);
     }
     showResults( "kata 1: " + k1)
     return k1
@@ -27,7 +27,7 @@ function kata2(n2) {
     // Exibir os números de 25 a 1: (25, 24, 23, …, 2, 1)
     let k2 = []
     for(let i = n2; i > 0; i--) {
-        k2.push(" " + i);
+        k2.push(i);
     }
     showResults("kata 2: " + k2)
     return k2
@@ -43,7 +43,7 @@ function kata3(n3) {
 
     let k3 = []
     for(let i = -1; i >= n3 ; i--) {
-        k3.push(" " + i);
+        k3.push(i);
     }
     showResults("kata 3: " + k3)
     return k3
@@ -57,7 +57,7 @@ function kata4(n4) {
     // Exibir os números de -25 a -1: (-25, -24, -23, …, -2, -1)
     let k4 = []
     for(let i = n4; i <= -1; i++) {
-        k4.push(" " + i);
+        k4.push(i);
     }
     showResults("kata 4: " + k4)
     return k4
@@ -70,7 +70,7 @@ function kata5(n5) {
     let k5 = []
     for (let i = 25; i >= n5; i--) {
         if (i % 2 !== 0){
-            k5.push(" " + i)
+            k5.push(i)
         }
     }
     showResults("kata 5: " + k5)
@@ -84,7 +84,7 @@ function kata6(n6) {
     let k6 = []
     for (let i = 1; i < n6; i++){
         if ( i % 3 == 0){
-            k6.push(" " + i)
+            k6.push(i)
         }
     }
     showResults("kata 6: " + k6)
@@ -99,7 +99,7 @@ function kata7(n7) {
     let k7 = []
     for (let i = 1; i < n7; i ++){
         if (i % 7 == 0){
-            k7.push(" " + i)
+            k7.push(i)
         }
     }
     showResults("Kata 7: " + k7)
@@ -113,7 +113,7 @@ function kata8(n8) {
     let k8 = []
     for (let i = n8; i > 0; i --){
         if ((i % 3 == 0) || (i % 7 == 0)){
-            k8.push(" " + i)
+            k8.push(i)
         }
     }
     showResults("Kata 8: " + k8)
@@ -130,7 +130,7 @@ function kata9(n9) {
     let k9 = []
     for (let i = 1; i < n9; i ++) {
         if ((i % 5 == 0) && (i % 2 != 0)){
-            k9.push(" " + i)
+            k9.push(i)
         }
     }
     showResults("kata 9 : " + k9)
@@ -147,7 +147,7 @@ function kata10(n10) {
     let k10 = []
     for(let i = 0; i < n10.length; i++){
         if(i < 20){
-            k10.push(" " + n10[i])
+            k10.push(n10[i])
         }
         
     }    
@@ -163,7 +163,7 @@ function kata11(n11) {
     let k11 = []
     for (let i = 0; i < n11.length; i++) {
         if (n11[i] % 2 == 0){
-            k11.push(" " + n11[i])
+            k11.push(n11[i])
         }
     }
     showResults("kata 11: " +  k11)
@@ -178,7 +178,7 @@ function kata12(n12) {
     let k12 = []
     for (let i = 0; i < n12.length; i++) {
         if (n12[i] % 2 !== 0){
-            k12.push(" " + n12[i])
+            k12.push(n12[i])
         }
     }
     showResults("kata 12: " +  k12)
@@ -195,7 +195,7 @@ function kata13(n13) {
     let k13 = []
     for (let i = 0; i < n13.length; i ++){
         if (n13[i] % 8  == 0){
-            k13.push(" " + n13[i])
+            k13.push(n13[i])
         }
     }
     showResults("Kata 13: " + k13)
@@ -210,7 +210,7 @@ function kata14(n14) {
     // Exibir o quadrado de cada elemento de sampleArray. (219961, 570025, …, 222784)
     let k14 = []
     for (let i = 0; i < n14.length; i ++) {
-        k14.push(" " + n14[i] * n14[i])
+        k14.push(n14[i] * n14[i])
     }
     showResults("Kata 14: " + k14)
     return k14
